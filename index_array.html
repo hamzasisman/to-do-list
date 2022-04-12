@@ -11,7 +11,7 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="Content/css/style.css">
+    <link rel="stylesheet" href="Content/css/style_array.css">
 
 </head>
 
@@ -19,20 +19,19 @@
     <!-- /Page Content -->
     <div class="container d-flex flex-column mt-4">
         <h5 class="text-center mt-5 font-weight-bold">To Do List App</h5>
-        <div id="newtask" class="d-flex my-3 mx-2">
-            <input id="inputText" onkeypress="handle(event)" type="text" class="px-2 d-flex flex-row flex-grow-1"
-                placeholder="Task to be done..">
-            <button id="push" onclick="myfunction()" class="btn btn-primary ml-2">Add</button>
-        </div>
-
-
-        <div id="tasks" class="my-2"></div>
+        <form id="todoForm" class="d-flex flex-wrap my-3 mx-2">
+            <input id="todoInput" onkeypress="handle(event)" type="text" class="px-2 d-flex flex-row mt-2 mr-2 flex-grow-1"
+            placeholder="Task to be done..">
+            <button type="button" id="button" onclick="myFunction()" class="btn btn-primary mt-2 mr-2">Add</button>
+            <button type="button" id="button2" onclick="clearTasks()" class="btn btn-primary mt-2">Clear</button>
+        </form>
+        <ul id="toDoList"></ul>
     </div>
     <!-- /.Page Content -->
 
     <script type="text/javascript" src="Content/lib/jquery/dist/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="Content/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="Content/js/jscript.js"> </script>
+    <script src="Content/js/jscript_array.js"> </script>
 
 </body>
 

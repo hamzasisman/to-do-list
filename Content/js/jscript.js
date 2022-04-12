@@ -24,7 +24,6 @@ function myfunction() {
             delete_tasks[i].onclick = function () {
                 this.parentNode.remove();
             }
-
         }
 
         var edit_tasks = document.querySelectorAll(".edit");
@@ -37,18 +36,14 @@ function myfunction() {
                 if (new_text != null)
                     span.innerHTML = new_text;
             }
-
         }
-
         document.querySelector('#newtask input').value = "";
-
     }
 }
 
-function handle(e){
-    if(e.keyCode === 13){
-        e.preventDefault(); // Ensure it is only this code that runs
-
+function handle(e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
         myfunction();
     }
 }
